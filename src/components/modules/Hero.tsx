@@ -40,10 +40,10 @@ const Portfolio2 = () => {
     return (
         <div className="flex items-center justify-center font-sans dark:bg-black">
             <div className="container">
-                <div className=" dark:bg-black w-full  p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden">
+                <div className=" dark:bg-black w-full p-4 relative overflow-hidden py-20">
 
                     {/* Main Content (Hero Section) */}
-                    <main className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-8 py-10">
+                    <main className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 pb-5">
 
                         {/* Left Side: Text Content */}
                         <div className="text-center md:text-left md:w-1/2 z-10 order-2 md:order-1">
@@ -52,7 +52,7 @@ const Portfolio2 = () => {
                                 Hi, <TypewriterView /> <br />
                                 <span className="text-black dark:text-white text-xl lg:text-2xl">Experienced Full Stack Developer</span>
                             </h1>
-                            <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl max-w-md mx-auto md:mx-0">
+                            <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl max-w-xl mx-auto md:mx-0">
                                 I aim to build scalable, high-performance websites that enhance user
                                 experience and solve real-world problems. I am committed to continuous learning and staying updated with the latest
                                 technologies. I aim to contribute to innovative projects in a collaborative environment.
@@ -97,11 +97,10 @@ const Portfolio2 = () => {
                                 </defs>
                             </svg>
                         </div>
-
                     </main>
 
                     {/* Social Links Footer - Now fully responsive with dark mode support */}
-                    <footer className="flex justify-center pb-4 md:p-0 md:justify-start md:absolute md:bottom-8 md:left-8 lg:bottom-12 lg:left-12">
+                    <div className="flex justify-center pb-4 md:p-0 md:justify-start">
                         <div className="flex space-x-5 md:space-x-6 text-gray-500 dark:text-gray-400 text-lg md:text-xl">
                             <Link to='https://www.linkedin.com/in/nabilsiddik' target="_blank">
                                 <LinkedInIcon />
@@ -123,7 +122,7 @@ const Portfolio2 = () => {
                                 );
                             }}><MailIcon /></span>
                         </div>
-                    </footer>
+                    </div>
                 </div>
             </div>
         </div>

@@ -61,6 +61,7 @@ const VueLogo = () => (
     </svg>
 );
 
+// Front end logos
 import react from '../../assets/images/icons/react.png'
 import html from '../../assets/images/icons/html.png'
 import css from '../../assets/images/icons/css.png'
@@ -71,6 +72,19 @@ import redux from '../../assets/images/icons/redux.png'
 import shadcnui from '../../assets/images/icons/shadcn.png'
 import nextjs from '../../assets/images/icons/nextjs.png'
 import figma from '../../assets/images/icons/figma.png'
+
+// Backend logos
+import nodejs from '../../assets/images/icons/nodejs.png'
+import expressjs from '../../assets/images/icons/expressjs.png'
+import mongodb from '../../assets/images/icons/javascript.png'
+import mongoose from '../../assets/images/icons/typescript.png'
+import javascript from '../../assets/images/icons/mongodb.webp'
+import typescript from '../../assets/images/icons/mongoose.png'
+import postman from '../../assets/images/icons/postman.webp'
+import axios from '../../assets/images/icons/axios.png'
+import restapi from '../../assets/images/icons/restapi.png'
+import nodemailer from '../../assets/images/icons/nodemailer.webp'
+
 
 // const logos1 = [
 //     { id: 1, component: reactLogo },
@@ -111,17 +125,17 @@ const logos1 = [
 ];
 
 const logos2 = [
-    { id: 1, component: html },
-    { id: 1, component: css },
-    { id: 1, component: react },
-    { id: 1, component: nextjs },
-    { id: 1, component: redux },
-    { id: 1, component: tailwind },
+    { id: 1, component: nodejs },
+    { id: 1, component: expressjs },
+    { id: 1, component: javascript },
+    { id: 1, component: typescript },
+    { id: 1, component: mongodb },
+    { id: 1, component: mongoose },
+    { id: 1, component: postman },
+    { id: 1, component: axios },
     { id: 1, component: bootstrap },
-    { id: 1, component: sass },
-    { id: 1, component: bootstrap },
-    { id: 1, component: shadcnui },
-    { id: 1, component: figma },
+    { id: 1, component: restapi },
+    { id: 1, component: nodemailer },
 ];
 
 
