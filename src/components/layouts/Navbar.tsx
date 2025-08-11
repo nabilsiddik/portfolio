@@ -89,7 +89,7 @@ export default function Navbar() {
                             </PopoverContent>
                         </Popover>
                         {/* Main nav */}
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-10">
                             {/* logo  */}
                             <Link to='/'>
                                 <h2 className="font-bold text-2xl flex items-center gap-2">
@@ -107,7 +107,7 @@ export default function Navbar() {
                                             <NavigationMenuLink
                                                 active={link.active}
                                                 href={link.href}
-                                                className="text-muted-foreground hover:text-primary py-1.5 font-medium"
+                                                className="text-muted-foreground hover:text-primary py-1.5 text-lg font-medium"
                                             >
                                                 {link.label}
                                             </NavigationMenuLink>

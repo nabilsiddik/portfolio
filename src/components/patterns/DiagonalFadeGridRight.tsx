@@ -1,7 +1,7 @@
 
 const DiagonalFadeGridRight = () => {
     return (
-        <div className="min-h-screen w-full bg-[#f9fafb] relative">
+        <div className="min-h-screen w-full  absolute left-0 right-0">
             {/* Diagonal Fade Grid Background - Top Right */}
             <div
                 className="absolute inset-0 z-0"
