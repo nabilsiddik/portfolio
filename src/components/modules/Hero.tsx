@@ -3,6 +3,8 @@ import developerImage from '../../assets/images/nabil-siddik-web-developer.png'
 import { Link } from 'react-router-dom'
 import { downloadFileFromGoogleDrive } from '@/utils/downloadFileFromGoogleDrive';
 import DiagonalFadeGridRight from '../patterns/DiagonalFadeGridRight';
+import SlideInView from '../SlideInText';
+import CustomGlowButton from '../GlowButton';
 
 const LinkedInIcon = () => (
     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="27px" width="27px" xmlns="http://www.w3.org/2000/svg">
@@ -43,13 +45,17 @@ export const Hero = () => {
                             {/* Font sizes now scale better from mobile to desktop */}
                             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground dark:text-white leading-tight">
                                 Hi, <TypewriterView /> <br />
-                                <span className="text-black dark:text-white text-xl lg:text-3xl ">Experienced Full Stack Developer</span>
+                                <SlideInView classes='text-black dark:text-white text-xl lg:text-3xl mt-5' text='Experienced Full Stack Developer' />
+
                             </h1>
                             <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto md:mx-0">
                                 I aim to build scalable, high-performance websites that enhance user
                                 experience and solve real-world problems. I am committed to continuous learning and staying updated with the latest
                                 technologies. I aim to contribute to innovative projects in a collaborative environment.
                             </p>
+
+                            {/* <CustomGlowButton text='Download Resume' icon={<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a1 1 0 0 1 1 1v10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V3a1 1 0 0 1 1-1zM5 17a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z" fill="#fff" /></svg>}/> */}
+
                             <button onClick={() => {
                                 downloadFileFromGoogleDrive('1NwrAnzL1CmsaOlrt4aFvjuPHHJlW2FSl')
                             }} className="mt-8 bg-black dark:bg-white text-white dark:text-black font-bold py-3 px-10 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors flex items-center mx-auto md:mx-0 gap-3">
