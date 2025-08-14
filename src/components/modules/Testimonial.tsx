@@ -3,7 +3,7 @@ import SectionHeader from '../SectionHeader';
 
 function Testimonial() {
   return (
-    <div className="font-sans flex flex-col items-center py-16 px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-white">
+    <div className="font-sans flex flex-col items-center py-20 px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-white">
       <SectionHeader title='Code You Can Trust, Stories You Can Believe' description='I deliver clean, efficient, and maintainable code, collaborating closely with teams to build impactful software solutions that drive innovation and meet real-world needs'/>
 
       {/* Testimonial Cards Container */}

@@ -78,7 +78,7 @@ const Divider = ({
             className={lineClasses}
             style={{ ...colorStyle, ...thicknessStyle }}
           ></div>
-          <span className="flex items-center px-4 text-sm text-zinc-500 font-medium">
+          <span className="flex items-center px-4 text-sm font-medium">
             {children}
           </span>
           <div 

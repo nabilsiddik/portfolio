@@ -13,7 +13,7 @@ interface TypewriterTextProps {
 }
 
 const TypewriterText: React.FC<TypewriterTextProps> = ({
-  text = "I am Nabil Siddik",
+  text = "I'm Nabil Siddik",
   speed = 100,
   deleteSpeed = 50,
   pauseDuration = 2000,

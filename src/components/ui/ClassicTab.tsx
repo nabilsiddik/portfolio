@@ -151,7 +151,7 @@ export default function ClassicTab() {
               onMouseLeave={() => setIsHovering(null)}
               className={`relative overflow-hidden rounded-xl cursor-pointer ${activeTab === tab.id
                 ? `bg-gradient-to-br ${tab.color} shadow-lg`
-                : 'bg-white dark:bg-gray-800 shadow hover:shadow-md'
+                : 'bg-white dark:bg-gray-800 shadow hover:shadow-md border-1'
                 }`}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
               whileTap={{ scale: 0.98 }}

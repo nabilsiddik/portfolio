@@ -5,6 +5,9 @@ import { downloadFileFromGoogleDrive } from '@/utils/downloadFileFromGoogleDrive
 import DiagonalFadeGridRight from '../patterns/DiagonalFadeGridRight';
 import SlideInView from '../SlideInText';
 import CustomGlowButton from '../GlowButton';
+import MagicCard from '../MagicCard';
+import { ProfileCard } from '../ProfileCard';
+import heroDeveloperImage from '../../assets/images/nabil-siddik-web-developer.png'
 
 const LinkedInIcon = () => (
     <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" height="27px" width="27px" xmlns="http://www.w3.org/2000/svg">
@@ -38,14 +41,14 @@ export const Hero = () => {
                 <div className=" dark:bg-black w-full p-4 relative overflow-hidden py-10 md:py-20 lg:py-30">
 
                     {/* Main Content (Hero Section) */}
-                    <main className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 pb-5">
+                    <main className="flex flex-col lg:flex-row items-center justify-center md:justify-between gap-6 pb-5">
 
-                        {/* Left Side: Text Content */}
-                        <div className="text-center md:text-left md:w-1/2 z-10 order-2 md:order-1">
+                        {/* Left Side Text Content */}
+                        <div className="text-center lg:text-left w-full z-10 order-2 lg:order-1">
                             {/* Font sizes now scale better from mobile to desktop */}
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground dark:text-white leading-tight">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-bold text-foreground dark:text-white leading-tight">
                                 Hi, <TypewriterView /> <br />
-                                <SlideInView classes='text-black dark:text-white text-xl lg:text-3xl mt-5' text='Experienced Full Stack Developer' />
+                                <SlideInView classes='text-black dark:text-white text-2xl lg:text-2xl xl:text-4xl mt-5' text='Experienced Full Stack Developer' />
 
                             </h1>
                             <p className="mt-4 text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl mx-auto md:mx-0">
@@ -54,27 +57,49 @@ export const Hero = () => {
                                 technologies. I aim to contribute to innovative projects in a collaborative environment.
                             </p>
 
-                            {/* <CustomGlowButton text='Download Resume' icon={<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a1 1 0 0 1 1 1v10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V3a1 1 0 0 1 1-1zM5 17a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z" fill="#fff" /></svg>}/> */}
-
-                            <button onClick={() => {
-                                downloadFileFromGoogleDrive('1NwrAnzL1CmsaOlrt4aFvjuPHHJlW2FSl')
-                            }} className="mt-8 bg-black dark:bg-white text-white dark:text-black font-bold py-3 px-10 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors flex items-center mx-auto md:mx-0 gap-3">
-                                <span>Download Resume</span>
-                                <span>
-                                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a1 1 0 0 1 1 1v10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V3a1 1 0 0 1 1-1zM5 17a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z" fill="#fff" /></svg>
-                                </span>
-                            </button>
+                            <div>
+                                <button onClick={() => {
+                                    downloadFileFromGoogleDrive('1NwrAnzL1CmsaOlrt4aFvjuPHHJlW2FSl')
+                                }} className="mt-8 bg-black dark:bg-white text-white dark:text-black font-bold py-3 px-10 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors flex items-center mx-auto lg:mx-0 gap-3">
+                                    <span>Download Resume</span>
+                                    <span>
+                                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a1 1 0 0 1 1 1v10.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V3a1 1 0 0 1 1-1zM5 17a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z" fill="#fff" /></svg>
+                                    </span>
+                                </button>
+                                {/* Social Links */}
+                                <div className="flex justify-center pb-4 md:p-0 lg:justify-start mt-5">
+                                    <div className="flex space-x-5 md:space-x-6 text-gray-500 dark:text-gray-400 text-lg md:text-xl">
+                                        <Link to='https://www.linkedin.com/in/nabilsiddik' target="_blank">
+                                            <LinkedInIcon />
+                                        </Link>
+                                        <Link to='https://github.com/nabilsiddik' target="_blank">
+                                            <GithubIcon />
+                                        </Link>
+                                        <Link to='https://www.youtube.com/@Code-With-Nabil' target="_blank">
+                                            <YoutubeIcon />
+                                        </Link>
+                                        <Link to='https://wa.me/8801957282230' target="_blank">
+                                            <WhatsAppIcon />
+                                        </Link>
+                                        <span className='cursor-pointer' onClick={() => {
+                                            window.open(
+                                                "https://mail.google.com/mail/?view=cm&fs=1&to=nabilsiddik90@gmail.com&su=Hello&body=This%20is%20a%20test",
+                                                "_blank",
+                                                "noopener,noreferrer"
+                                            );
+                                        }}><MailIcon /></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <DiagonalFadeGridRight />
 
-                        {/* Right Side: Image with Blob Shape */}
-                        <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0 order-1 md:order-2">
+                        {/* Right side Developer Image */}
+                        <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0 order-1 lg:order-2">
 
-                            {/* The blob shape adapts to light/dark mode */}
                             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="absolute w-full h-full">
                                 <path fill="currentColor" className="text-black dark:text-white" d="M48.8,-63.9C62.9,-54.2,73.8,-40.1,78.2,-24.5C82.6,-8.9,80.5,8.2,74.5,23.6C68.5,39,58.6,52.7,45.5,62.3C32.4,71.9,16.2,77.4,-1.8,78.8C-19.8,80.2,-39.6,77.5,-53.4,67.7C-67.2,57.9,-75,41,-76.8,24.2C-78.5,7.4,-74.2,-9.3,-66.5,-23.7C-58.8,-38.1,-47.7,-50.3,-34.9,-60.1C-22.1,-69.9,-7.6,-77.4,7.9,-78.9C23.4,-80.4,46.8,-75.9,48.8,-63.9Z" transform="translate(100 100)" />
                             </svg>
-                            {/* The image is clipped to a similar path */}
 
                             <div className="w-full h-full">
                                 <img
@@ -89,7 +114,7 @@ export const Hero = () => {
                                     }}
                                 />
                             </div>
-                            {/* Defining the SVG clip-path. It's hidden but used by the style attribute */}
+
                             <svg width="0" height="0">
                                 <defs>
                                     <clipPath id="blob-clip" clipPathUnits="objectBoundingBox">
@@ -97,33 +122,25 @@ export const Hero = () => {
                                     </clipPath>
                                 </defs>
                             </svg>
+
+                            {/* <MagicCard>
+                                <ProfileCard
+                                    coverTitle="Full Stack"
+                                    coverHighlight="Web Developer"
+                                    coverSubtitle="Build Scalable Web App"
+                                    profileImage={heroDeveloperImage}
+                                    name="Nabil Siddik"
+                                    username="nabilsiddik"
+                                    bio="Passionate about learning new technologies and keeping myself updated with the latest technologies."
+                                    stars={5}
+                                    reviews={26}
+                                    posts={54}
+                                    likes={500}
+                                    skills={["React", "Tailwind", "Express", "MongoDB", "Javascript", "Typescript", "REST API"]}
+                                />
+                            </MagicCard> */}
                         </div>
                     </main>
-
-                    {/* Social Links Footer - Now fully responsive with dark mode support */}
-                    <div className="flex justify-center pb-4 md:p-0 md:justify-start">
-                        <div className="flex space-x-5 md:space-x-6 text-gray-500 dark:text-gray-400 text-lg md:text-xl">
-                            <Link to='https://www.linkedin.com/in/nabilsiddik' target="_blank">
-                                <LinkedInIcon />
-                            </Link>
-                            <Link to='https://github.com/nabilsiddik' target="_blank">
-                                <GithubIcon />
-                            </Link>
-                            <Link to='https://www.youtube.com/@Code-With-Nabil' target="_blank">
-                                <YoutubeIcon />
-                            </Link>
-                            <Link to='https://wa.me/8801957282230' target="_blank">
-                                <WhatsAppIcon />
-                            </Link>
-                            <span className='cursor-pointer' onClick={() => {
-                                window.open(
-                                    "https://mail.google.com/mail/?view=cm&fs=1&to=nabilsiddik90@gmail.com&su=Hello&body=This%20is%20a%20test",
-                                    "_blank",
-                                    "noopener,noreferrer"
-                                );
-                            }}><MailIcon /></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

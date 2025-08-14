@@ -96,7 +96,7 @@ function Footer() {
             <BottomFadeGrid />
             <div className="container mx-auto">
                 <div className="max-w-7xl mx-auto flex flex-col items-center relative z-10">
-                    <div className="mb-6 flex items-center justify-center">
+                    <div className="mb-5 flex items-center justify-center">
                         <Link to='/'>
                             <h2 className="font-bold text-2xl flex items-center gap-2">
                                 <span className="mt-1">
@@ -107,7 +107,7 @@ function Footer() {
                         </Link>
                     </div>
 
-                    <nav className="mb-6 w-full">
+                    <nav className="mb-5 w-full">
                         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-base font-medium">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
@@ -122,7 +122,7 @@ function Footer() {
                         </ul>
                     </nav>
 
-                    <div className="my-6 flex flex-wrap justify-center gap-4 text-sm">
+                    <div className="flex flex-wrap justify-center gap-4 text-sm">
                         {socialIcons.map((icon) => (
                             <a
                                 key={icon.name}
