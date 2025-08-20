@@ -50,6 +50,22 @@ export default function FancyTab() {
       content:
         'This is the VIDEOS tab content. Here you would display your video player or video collection.',
     },
+    {
+      id: 5,
+      name: 'Skills & Strengths',
+      icon: '🎬',
+      type: 'content',
+      content:
+        'This is the VIDEOS tab content. Here you would display your video player or video collection.',
+    },
+    {
+      id: 6,
+      name: 'Skills & Strengths',
+      icon: '🎬',
+      type: 'content',
+      content:
+        'This is the VIDEOS tab content. Here you would display your video player or video collection.',
+    },
   ];
 
   return (

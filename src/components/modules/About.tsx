@@ -1,10 +1,7 @@
 import aboutImage from '../../assets/images/nabil-siddik-about-me.jpg'
-import { CoderProfileCard } from "../CoderProfileCard";
 import FancyTab from '../FancyTab';
 import MagicCard from '../MagicCard';
-import { ProfileCard } from '../ProfileCard';
 import SectionHeader from "../SectionHeader";
-import SpiderNetwork from '../SpiderNetwork';
 import ThreeDCard from '../ThreeDCard';
 
 // interface CustomBadgeProps {
@@ -38,7 +35,7 @@ import ThreeDCard from '../ThreeDCard';
 
 const About = () => {
   return (
-    <div className="my-30 py-10 relative" style={{
+    <div className="my-30 relative" style={{
       // background: 'linear-gradient(263.72deg, rgb(255, 196, 102) 5.37%, rgb(255, 147, 193) 48.9%, rgb(203, 102, 241) 99.03%)'
     }}>
 
@@ -48,25 +45,11 @@ const About = () => {
       }} title="About Me" description="Passionate software developer crafting scalable, user-friendly solutions. I turn complex challenges into clean, efficient code while constantly learning and innovating." />
 
       <div className="container mx-auto">
-        <div className="flex gap-10">
+        <div className="flex gap-10 items-center">
           <div className='flex-1'>
             {/* <SpiderNetwork /> */}
             <ThreeDCard>
             <MagicCard>
-              {/* <ProfileCard
-                coverTitle="Full Stack"
-                coverHighlight="Web Developer"
-                coverSubtitle="Build Scalable Web App"
-                profileImage={aboutImage}
-                name="Nabil Siddik"
-                username="nabilsiddik"
-                bio="Passionate about learning new technologies and keeping myself updated with the latest technologies."
-                stars={5}
-                reviews={26}
-                posts={54}
-                likes={500}
-                skills={["React", "Tailwind", "Express", "MongoDB", "Javascript", "Typescript", "REST API"]}
-              /> */}
               <img src={aboutImage} alt="" />
             </MagicCard>
           </ThreeDCard>
